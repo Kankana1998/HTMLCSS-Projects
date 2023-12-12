@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffdf40;
+}
+
+.container{
+    height: 31.25em;
+    width: 31.25em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.emoji{
+    height: 18.75em;
+    width: 18.75em;
+    background-color: #ffbe40;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+   
+}
+
+.emoji::before, 
+.emoji::after{
+    
+}
