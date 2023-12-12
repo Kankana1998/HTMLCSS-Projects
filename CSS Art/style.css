@@ -32,5 +32,61 @@ body{
 
 .emoji::before, 
 .emoji::after{
-    
+    position: absolute;
+    content: "";
+    height: 1.87em;
+    width: 3.12em;
+    border: 1.12em solid #663733;
+    border-radius: 5em 5em 0 0;
+   border-bottom: none;
+   top: 5em;
+}
+
+.emoji::before{
+    left: 3.12em;
+}
+
+.emoji::after{
+    right: 3.12em;
+}
+
+.mouth{
+    position: absolute;
+    background-color: #663733;
+    height: 6.25em;
+    width: 12.5em;
+    border-radius: 0 0 6.25em 6.25em;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 10.62em;
+   overflow: hidden;
+
+}
+
+.mouth::before{
+    position: absolute;
+    content: "";
+    height: 1.87em;
+    width: 100%;
+    background-color: #ffedb3;
+}
+
+.mouth::after{
+    position: absolute;
+    content: "";
+    height: 3.75em;
+    width: 100%;
+    background-color: #e63a17;
+    top: 3.12em;
+    border-radius: 50% 50% 0 0;
+   
+}
+
+.container::After{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
 }
