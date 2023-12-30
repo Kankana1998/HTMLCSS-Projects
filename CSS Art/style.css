@@ -83,7 +83,7 @@ body{
    
 }
 
-.container::After{
+.container::after{
     content: "";
     position: absolute;
     height: 100%;
