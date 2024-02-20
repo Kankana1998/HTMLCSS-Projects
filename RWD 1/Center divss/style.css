@@ -1,0 +1,26 @@
+/* Method 1 */
+
+/* .center{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+
+/* Method 2 */
+
+
+.parent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+background-color: red;
+
+}
+
+/* Method 3 */
+
