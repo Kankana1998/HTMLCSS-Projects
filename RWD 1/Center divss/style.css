@@ -9,8 +9,7 @@
 
 /* Method 2 */
 
-
-.parent{
+/* .parent{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +19,16 @@
 .center{
 background-color: red;
 
-}
+} */
 
 /* Method 3 */
 
+.parent {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  background-color: red;
+}
