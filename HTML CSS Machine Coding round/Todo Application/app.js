@@ -6,25 +6,32 @@ function addTask(){
         alert("Please enter something!")
     } else{
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
+        li.innerHTML = `<li>${inputBox.value}</li>
+        <button class="editBtn" onClick="editTask(this)">Edit</button>
+        <button onClick="deleteTask()">Delete</button>
+        `;
         listContainer.appendChild(li);
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+        
+        // let span = document.createElement("span");
+        // span.innerHTML = "\u00d7";
+        // li.appendChild(span);
     }
     inputBox.value = "";
     saveData();
 }
 
-listContainer.addEventListener("click", function(e){
-    if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
-        saveData();
-    } else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
-        saveData();
-    }
-}, false);
+
+function editTask(e){
+
+}
+
+function deleteTask(){
+    var listItem=this.parentNode;
+    var ul=listItem.parentNode;
+    //Remove the parent list item from the ul.
+    ul.removeChild(listItem);
+}
+
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
